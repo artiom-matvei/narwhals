@@ -148,7 +148,7 @@ def validate_laziness(items: Iterable[Any]) -> None:
         all(isinstance(item, LazyFrame) for item in items)
     ):
         return
-    msg = "The items to concatenate should either all be eager, or all lazy"
+    msg = "The items to concatenate should either all be eager, or all lazy (narwhals.dataframe)"
     raise NotImplementedError(msg)
 
 
